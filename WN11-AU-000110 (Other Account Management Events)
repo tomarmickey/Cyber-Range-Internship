@@ -1,0 +1,10 @@
+<#
+.SYNOPSIS
+    Remediation for WN11-AU-000110 - Other Account Management Auditing.
+.DESCRIPTION
+    Configures the system to audit 'Other Account Management Events' success events.
+.AUTHOR
+    Tomar Mickey
+#>
+
+auditpol /set /subcategory:"Other Account Management Events" /success:enable
