@@ -1,0 +1,10 @@
+<#
+.SYNOPSIS
+    Remediation for WN11-AU-000100 - Security Group Management Auditing.
+.DESCRIPTION
+    Configures the system to audit 'Security Group Management' success events.
+.AUTHOR
+    Tomar Mickey
+#>
+
+auditpol /set /subcategory:"Security Group Management" /success:enable
