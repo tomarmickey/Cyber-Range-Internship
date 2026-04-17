@@ -1,0 +1,10 @@
+<#
+.SYNOPSIS
+    Remediation for WN11-AU-000035 - Logoff Auditing.
+.DESCRIPTION
+    Configures the system to audit 'Logoff' success events.
+.AUTHOR
+    Tomar Mickey
+#>
+
+auditpol /set /subcategory:"Logoff" /success:enable
